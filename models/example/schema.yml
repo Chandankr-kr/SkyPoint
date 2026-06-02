@@ -1,4 +1,3 @@
-
 version: 2
 
 models:
@@ -19,3 +18,22 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: student
+      description: "Student information table"
+      columns:
+          - name: student_id
+            description: "The primary key for student"
+            tests:
+                - unique
+                - not_null
+          - name: student_name
+            description: "Student full name"
+          - name: email
+            description: "Student email address"
+          - name: enrollment_date
+            description: "Date student enrolled"
+          - name: status
+            description: "Student status (Active/Inactive)"
+          - name: gpa
+            description: "Student GPA"
